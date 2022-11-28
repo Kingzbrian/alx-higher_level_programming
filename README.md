@@ -105,10 +105,4 @@ Add additional notes about how to deploy this on a live system.
 
 - [@kingzbrian](https://github.com/kingzbrian) - Idea & Initial work
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
 
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
