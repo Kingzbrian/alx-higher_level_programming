@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 for i in 'abcdefghijklmnopqrstuvwxyz':
-    print(f"{i}" end="")
+    if i != 'q' and i != 'e':
+        print("{}".format(i), end="")
