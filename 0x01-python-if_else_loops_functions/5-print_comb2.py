@@ -1,3 +1,8 @@
 #!/usr/bin/python3
 for i in range(100):
-    print("{:0>2}".format(i), end=", " if i < 99 else "\n")
+    if i < 10:
+        print(f"0{i}", end=", ")
+    elif i >= 10 and i < 99:
+        print(f"{i}", end=", ")
+    else:
+        print(f"{i}")
