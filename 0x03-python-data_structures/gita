@@ -1,6 +1,4 @@
-#!/bin/bash                                                                                                                     
-
-git add -A                                                                                                                      
+#!/bin/bash                                                                                                                                                                
 
 git add .                                                                                                                       
 
