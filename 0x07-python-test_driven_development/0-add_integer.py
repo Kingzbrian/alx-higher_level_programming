@@ -30,3 +30,6 @@ def add_integer(a, b=98):
             raise TypeError("{} must be an integer".format(param))
 
     return sum(values)
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("tests/0-add_integer.txt")
