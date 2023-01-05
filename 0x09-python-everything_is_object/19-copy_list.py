@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 def copy_list(l):
-    return l[:]
+    a = list(l)
+    return a[:]
