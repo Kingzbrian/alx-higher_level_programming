@@ -6,7 +6,7 @@ from the specified class ; otherwise False.
 """
 
 
-def inherits_from(obj, a_class) -> bool:
+def inherits_from(obj, a_class):
     """Method for comparing object classes
     Args:
         obj (unknown): object whose type is to be checked.
@@ -15,6 +15,6 @@ def inherits_from(obj, a_class) -> bool:
         True if obj isinstance of a_class/ class that inherits from it.
         otherwise False
     """
-    if issubclass(type(obj), a_class) and type(obj) != a_class:
+    if isinstance(obj, a_class) and obj.__class__ is not a_class:
         return True
     return False
