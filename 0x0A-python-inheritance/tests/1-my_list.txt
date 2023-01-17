@@ -6,11 +6,11 @@ Using ``MyList``
 
 First import ``MyList`` from the ``1-my_list`` module:
 
->>> Mylist = __import__("KING").Mylist
+>>> MyList = __import__("MyList").MyList
 
 Now use it:
 
->>> my_list = Mylist()
+>>> my_list = MyList()
 >>> my_list.append(1)
 >>> my_list
 [1]
