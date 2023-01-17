@@ -60,4 +60,7 @@ ValueError: 3 is not in list
 Traceback (most recent call last):
 	...
 IndexError: pop index out of range
-
+>>> my_list.print_sorted(8)
+Traceback (most recent call last):
+	...
+TypeError: print_sorted() takes 1 positional argument but 2 were given
