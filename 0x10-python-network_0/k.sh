@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -sH "X-School-User-Id: 98" "$1"
+curl -sd "email=test@gmail.com&subject=I will always be here for PLD" "$1" -X POST
