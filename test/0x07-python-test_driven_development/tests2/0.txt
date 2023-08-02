@@ -1,0 +1,90 @@
+0 test module
+--------------
+using "add_integer"
+==================
+import function "add_integer" from module
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+test 1 int argument:
+>>> add_integer(1)
+99
+
+test default for second value;
+>>> add_integer(0)
+98
+
+test 2 ints:
+>>> add_integer(3, 4)
+7
+
+test negative and positive ints
+>>> add_integer(-90, 100)
+10
+
+test negative ints
+>> add_integer(-10, -10)
+-20
+
+test 1 float and int
+>>> add_integer(1.4, 3)
+4
+
+test 1 float
+>>> add_integer(1.4)
+99
+
+test 2 floats
+>>> add_integer(2.3, 5.1)
+7
+
+test 1 negative float
+>>> add_integer(-10.2, 15)
+5
+
+test 2 negative floats
+>>> add_integer(-10.2, -15.2)
+-25
+
+test 2 long ints
+>>> add_integer(10245, 15235)
+25480
+
+test 1 string
+>>> add_integer("hi")
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+
+test 1 string and int
+>>> add_integer(9, "hi")
+Traceback (most recent call last):
+	...
+TypeError: b must be an integer
+
+test 1 string and float
+>>> add_integer("hi", 10.5)
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+
+test 2 strings
+>>> add_integer("hi", "th")
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+
+convert infinity
+>>> add_integer(float('inf'), float(-inf))
+Traceback (most recent call last):
+	...
+OverflowError: could not convert float infinity to integer
+
+convert string
+>>> add_integer(float('kk'))
+Traceback (most recent call last):
+	...
+ValueError: could not convert float kk to integer
+
+
+
