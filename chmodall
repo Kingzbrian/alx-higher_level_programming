@@ -1,0 +1,2 @@
+#!/bin/bash
+find ~/practice/hlp/alx-higher_level_programming -type f -exec chmod +x {} \;
